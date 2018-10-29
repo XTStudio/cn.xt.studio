@@ -1,0 +1,14 @@
+{
+  "docs": {
+    "基础": [
+      "guide-introduce",
+      "guide-view",
+      "guide-scroller"
+    ]
+  },
+  "docs-other": {
+    "APIs": [
+      "api-index"
+    ]
+  }
+}
