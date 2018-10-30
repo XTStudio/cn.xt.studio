@@ -3,7 +3,8 @@
     "基础": [
       "guide-introduce",
       "guide-view",
-      "guide-scroller"
+      "guide-scroller",
+      "guide-tableview"
     ]
   },
   "docs-other": {

@@ -122,5 +122,5 @@ class MainView extends UIView {
 
 ## 下一步
 
-* 你可能想要知道如何处理超出边界的内容，请阅读[使用滚动视图](Scroller.md)一节。
+* 你可能想要知道如何处理超出边界的内容，请阅读[使用滚动视图](guide-scroller.md)一节。
 * 你可能想要知道如何处理长按、拖动等手势，请阅读[处理手势事件](GestureRecognizers.md)一节。

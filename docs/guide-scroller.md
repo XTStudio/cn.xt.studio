@@ -3,11 +3,11 @@ author: Pony Cui
 title: 滚动视图
 ---
 
-当内容超出 ```UIView``` 的可视范围时，需要提供一种方式让用户能够查看到这些内容，滚动视图正是处理这种问题的最佳方法。
+当内容超出视图可视范围时，需要一种方式让用户能够查看到这些内容，滚动视图正是处理这种问题的最佳方法。
 
-滚动视图实际上是一个普通的 ```UIView```，我们在 ```UIView``` 上添加了拖动手势，接收手势事件，并滚动内容视图。
+滚动视图（ScrollView）实际上是一个普通的视图，在该视图上添加拖动手势，当用户触发拖动手势时，滚动视图内容。
 
-除此以外，滚动视图还封装有以下功能：
+滚动视图还封装有以下功能：
 
 * 滚动条
 * 控制可滚动区域大小
@@ -50,33 +50,36 @@ class MainViewController extends UIViewController {
   }
 
 }
-
-const main = new MainViewController
 ```
 
-我们看看这个例子说明了什么：
+这个例子做了什么？
 
-1. 我们向 ```this.scrollView``` 添加了两个子视图，其中，第二个视图超出了 ```this.scrollView``` 的可视范围。
-2. 这个时候，我们将 ```this.scrollView.contentSize``` 设置为高 600 的可滚动区域高度。
+1. 我们向 ```scrollView``` 添加了两个子视图，第二个视图超出了 ```scrollView``` 的可视范围。
+2. 我们将 ```scrollView.contentSize``` 设置为高度为 600 的可滚动区域。
 3. 这样，用户就可以通过拖动的方式，查看超出区域的内容。
+
+#### 请尝试
+
+* 向 ```scrollView``` 再添加几个红色方块试试。
+* 尝试在 x 轴方向添加一些红色方块，设置 ```contentSize``` 的 ```width``` 为 ```600```。
 
 ## 列表视图
 
 那么，我们可以用这种方式处理长列表视图吗？
 
-可以，但是这会造成代码混乱，并且不利于性能优化，你应该使用 [UITableView](TableView.md) 处理列表视图。
+答案是，可以，但是你需要手动计算各个视图块的 ```frame```。更糟糕的是，随着列表行数增多，这些视图块也会增多，会造成严重的性能问题。
+
+要解决这个问题，你可以使用[列表视图](TableView.md)。
 
 ## 分页滚动
 
-分页滚动是一个常见的需求，对于简单的视图，只需要将 ```UIScrollView::pagingEnabled``` 设为 ```true``` 即可。
+要实现分页滚动，只需要将 ```pagingEnabled``` 设为 ```true``` 即可。[（例子）](https://jsbin.com/mituwej/edit?js,output)
 
 而对于复杂的分页滚动，可以使用 ```UIPageViewController``` 实现。
 
 ## 下拉刷新
 
-在列表视图中，下拉刷新是非常常见的需求，XT 已经为你封装好对应控件（但目前你还未能自定义样式）。
-
-用法与[示例](https://jsbin.com/bonorum/edit?js,output)如下：
+在列表视图中，下拉刷新是常见的需求，XT 已经封装好对应控件（目前还未能自定义样式）。[（示例）](https://jsbin.com/bonorum/edit?js,output)
 
 ```typescript
 this.scrollView.addSubview(new UIRefreshControl().on("refresh", (sender: UIRefreshControl) => {
@@ -89,3 +92,7 @@ this.scrollView.addSubview(new UIRefreshControl().on("refresh", (sender: UIRefre
 ## 加载更多
 
 与下拉刷新组件用法类似，使用 ```UIFetchMoreControl```处理加载更多的情况，当用户滚动视图至底部时，相应回调会被触发。
+
+## 下一步
+
+* 了解[长列表视图](guide-tableview.md)的使用。
