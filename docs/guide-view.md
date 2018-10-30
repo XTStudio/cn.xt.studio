@@ -3,57 +3,80 @@ author: Pony Cui
 title: 视图
 ---
 
-视图（UIView），是一个抽象对象，视图用于描述指定矩形的渲染方法，同时用于组织子视图以构建整个应用。
+视图，即 UIView 类，是整个界面系统的核心类。
 
-视图可以管理子视图，子视图被添加到某一视图后，可以使用 ```superview``` 属性获取父级视图，父级视图可以使用 ```subviews``` 属性获取所有子级视图。你可以使用视图层级管理整个界面。
+视图类负责以下功能：
 
-除此以外，视图还负责以下功能：
-
-* 响应手势操作（包括 UIGestureRecognizer 的响应）
-* 使用 Core Graphics 库进行定制渲染
+* 允许开发者在视图内添加任意个子视图
+* 响应手势操作
 * 响应动画
 * 响应样式变化
+* 允许使用 Core Graphics 库进行定制渲染
 
-## 层级管理
+## 视图层级
 
 我们已经在起步指南中简单介绍了视图层级，在此，我们希望向开发者描述更多关于层级的细节。
 
-### 层级顺序
+### 视图的添加与删除
 
-最后添加的层级，可见优化级最高，此外，你可以通过 ```exchangeSubview``` 方法替换同层视图的顺序。
+你可以使用以下 API 对子视图进行添加、删除操作。[（例子）](https://jsbin.com/giyokew/edit?js,output)
 
-除了使用 ```addSubview``` 方法添加层级外，也可以使用 ```insertSubviewAtIndex``` ```insertSubviewBelowSubview``` ```insertSubviewAboveSubview``` 方法在图层间插入图层。
+* removeFromSuperview(): void
+* insertSubviewAtIndex(view: UIView, index: number): void
+* addSubview(view: UIView): void
+* insertSubviewBelowSubview(view: UIView, belowSubview: UIView): void
+* insertSubviewAboveSubview(view: UIView, aboveSubview: UIView): void
 
-使用 ```bringSubviewToFront``` ```sendSubviewToBack``` 方法可以将指定图层拉至最高或推至最底。
+当视图被添加到父视图后，开发者可以使用 ```superview``` 属性获取父视图实例。
 
-### 超出边界渲染
+父视图可以使用 ```subviews``` 属性获取其管理的所有子视图。
 
-默认情况下，视图可以超出父视图的边界进行渲染（性能更优），如果你需要禁止这个行为，可以将 ```clipsToBounds``` 属性设为 ```true```。
+### 显示顺序
+
+越往后添加的图层，层级越高，你可以使用以下方法修改特定图层层级。[（例子）](https://jsbin.com/disugon/edit?js,output)
+
+* exchangeSubview(index1: number, index2: number): void
+* bringSubviewToFront(view: UIView): void
+* sendSubviewToBack(view: UIView): void
+
+### 超出边界的处理
+
+默认情况，当视图可以超出父视图的边界时，视图可以被正常渲染，如果你需要禁止这个行为，可以将 ```clipsToBounds``` 属性设为 ```true```。[（例子）](https://jsbin.com/mevoga/edit?js,output)
 
 ### 生命周期
 
-UIView 的类方法会在特定事件发生时被调用，具体为：
+视图类方法会在特定事件发生时被调用：
 
 * didAddSubview(subview: UIView): void - 添加一个子视图后
 * willRemoveSubview(subview: UIView): void - 移除一个子视图前
 * willMoveToSuperview(newSuperview: UIView): void - 被添加到一个子视图前
 * didMoveToSuperview(): void - 被添加到一个子视图后
 
-你可以重写这些方法，定制一些你认为需要 Hook 的行为。
+你可以重写这些方法，定制你认为需要重写的行为。
 
-## 布局管理
+## 布局
 
-### frame / bounds / center
+### frame
 
-这三个属性是互相影响的，```frame``` 属性影响视图在父视图中的位置、大小，```bounds``` 属性用于描述内容的大小，```center``` 属性用于设置或获取视图的中心点。
+```frame``` 用于描述该视图在父视图中的相对位置。
+
+### bounds
+
+```bounds``` 用于描述该视图的内容大小。
+
+### center
+
+```center``` 用于描述该视图的中心点。
 
 ### transform
 
-transform 接受一个 UIAffineTransform 结构体，你可以使用变换属性对图层进行二维矩阵变换，具体变换规则可以参考[这篇文章](https://www.cnblogs.com/Ivy-s/p/6786622.html)。
+```transform``` 用于描述该视图的二维变换。
 
-### 对子视图布局
+```transform``` 接收 ```UIAffineTransform``` 结构体，具体变换规则可以参考[这篇文章](https://www.cnblogs.com/Ivy-s/p/6786622.html)。
 
-当 ```UIView::frame``` 属性被修改后，```UIView::layoutSubviews``` 方法会被调用，你可以在此时对子视图进行布局。
+### 子视图布局
+
+当 ```frame``` 属性被修改后，```layoutSubviews``` 方法会被调用，在此时对子视图进行布局。[（例子）](https://jsbin.com/worego/edit?js,output)
 
 ```typescript
 class MainView extends UIView {
@@ -74,13 +97,17 @@ class MainView extends UIView {
 }
 ```
 
-如上述代码，```yellowView``` 占据父视图的一半宽高。
+上述代码，```yellowView``` 占据父视图的一半宽高。
+
+#### 练习
+
+* 请尝试让 ```yellowView``` 居中显示 
 
 ## 触摸
 
 我们已经在起步指南中简单介绍了 ```UIGestureRecognizer``` 的使用方法，在此不再说明。
 
-值得关注的一个属性是，```UIView::touchAreaInsets``` 借助此属性你可以扩展视图的有效触摸区域，这对于小按钮而言是相关有用的一个属性。
+值得关注的一个属性是 ```touchAreaInsets```， 借助此属性你可以扩展视图的有效触摸区域，这对于小按钮而言是相当有用的一个属性。
 
 ## 样式
 
@@ -90,6 +117,8 @@ class MainView extends UIView {
 * 使用 ```layer.cornerRadius``` 为视图添加圆角。
 * 使用 ```layer.borderWidth``` 和 ```layer.borderColor``` 为视图添加边框。
 * 使用 ```layer.shadowColor``` / ```layer.shadowOpacity``` / ```layer.shadowOffset``` / ```layer.shadowRadius``` 为视图添加阴影。
+
+具体用法请查看[例子](https://jsbin.com/jipenot/edit?js,output)。
 
 ## 下一步
 
