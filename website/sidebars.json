@@ -6,7 +6,7 @@
       "guide-scroller",
       "guide-tableview"
     ],
-    "本地开发": [
+    "开发": [
       "guide-init",
       "guide-vscode",
       "guide-run-on-web",
