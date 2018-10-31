@@ -4,7 +4,10 @@
       "guide-introduce",
       "guide-view",
       "guide-scroller",
-      "guide-tableview"
+      "guide-tableview",
+      "guide-label",
+      "guide-input",
+      "guide-image"
     ],
     "开发": [
       "guide-init",

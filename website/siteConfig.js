@@ -46,7 +46,7 @@ const siteConfig = {
     theme: 'default',
   },
   usePrism: ['typescript'],
-  scripts: ['https://buttons.github.io/buttons.js'],
+  // scripts: ['https://buttons.github.io/buttons.js'],
   onPageNav: 'separate',
   cleanUrl: true,
   ogImage: 'img/docusaurus.png',
