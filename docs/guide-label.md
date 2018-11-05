@@ -52,7 +52,7 @@ class MainViewController extends UIViewController {
 
 你可以尝试更多的 API 以了解 ```UIAttributedString``` 的更多用法。
 
-## 测量文本宽高
+## 测量宽高
 
 你可以使用 ```measure``` 方法，测量 ```UIAttributedString``` 的实际渲染宽高，其中 width 和 height 代表渲染目标的最大宽高。
 

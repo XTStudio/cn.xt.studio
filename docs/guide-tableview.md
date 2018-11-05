@@ -196,5 +196,4 @@ this.tableView.tableHeaderView = headerView
 
 ## 下一步
 
-* 深入讨论[长列表复用机制](guide-tableview-reuse.md)。
 * 了解 [CollectionView](guide-collectionview.md) 的使用。
