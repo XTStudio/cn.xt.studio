@@ -29,7 +29,15 @@
       "api-foundation-data",
       "api-foundation-dispatchqueue",
       "api-foundation-filemanager",
-      "api-foundation-mutabledata"
+      "api-foundation-mutabledata",
+      "api-foundation-mutableurlrequest",
+      "api-foundation-timer",
+      "api-foundation-url",
+      "api-foundation-urlrequest",
+      "api-foundation-urlrequestcachepolicy",
+      "api-foundation-urlresponse",
+      "api-foundation-urlsession",
+      "api-foundation-urlsessiontask"
     ]
   }
 }
