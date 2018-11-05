@@ -21,8 +21,15 @@
     ]
   },
   "docs-other": {
-    "APIs": [
+    "索引": [
       "api-index"
+    ],
+    "Foundation": [
+      "api-foundation-bundle",
+      "api-foundation-data",
+      "api-foundation-dispatchqueue",
+      "api-foundation-filemanager",
+      "api-foundation-mutabledata"
     ]
   }
 }

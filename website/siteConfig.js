@@ -29,7 +29,7 @@ const siteConfig = {
   organizationName: 'XT Studio',
   headerLinks: [
     {doc: 'guide-introduce', label: '教程'},
-    {api: 'api-index', label: 'API'},
+    {doc: 'api-index', label: 'API'},
     {page: 'help', label: '帮助'},
     {blog: true, label: '动态'},
   ],
