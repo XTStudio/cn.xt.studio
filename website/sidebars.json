@@ -37,7 +37,17 @@
       "api-foundation-urlrequestcachepolicy",
       "api-foundation-urlresponse",
       "api-foundation-urlsession",
-      "api-foundation-urlsessiontask"
+      "api-foundation-urlsessiontask",
+      "api-foundation-urlsessiontaskstate",
+      "api-foundation-userdefaults",
+      "api-foundation-uuid"
+    ],
+    "UIKit": [
+      "api-uikit-uiactionsheet",
+      "api-uikit-uiactivityindicatorview",
+      "api-uikit-uiaffinetransform",
+      "api-uikit-uialert",
+      "api-uikit-uianimator"
     ]
   }
 }
