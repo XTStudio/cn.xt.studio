@@ -47,7 +47,23 @@
       "api-uikit-uiactivityindicatorview",
       "api-uikit-uiaffinetransform",
       "api-uikit-uialert",
-      "api-uikit-uianimator"
+      "api-uikit-uianimator",
+      "api-uikit-uiattributedstring",
+      "api-uikit-uiattributedstringkey",
+      "api-uikit-uibarbuttonitem",
+      "api-uikit-uibezierpath",
+      "api-uikit-uibutton",
+      "api-uikit-uicollectionview",
+      "api-uikit-uicollectionviewcell",
+      "api-uikit-uicollectionviewflowlayout",
+      "api-uikit-uicollectionviewlayout",
+      "api-uikit-uicollectionviewscrolldirection",
+      "api-uikit-uicolor",
+      "api-uikit-uiconfirm",
+      "api-uikit-uicontrolcontenthorizontalalignment",
+      "api-uikit-uicontrolcontentverticalalignment",
+      "api-uikit-uicontrolstate",
+      "api-uikit-uidevice"
     ]
   }
 }

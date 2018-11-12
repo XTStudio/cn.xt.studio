@@ -7,10 +7,10 @@ title: URL
 
 ### Static Methods
 
-#### URLWithString(string: string, baseURL?: URL): `URL | undefined`
+#### URLWithString(string: `string`, baseURL?: `URL`): `URL | undefined`
 使用字符串创建一个 URL，当 ```baseURL``` 不为空时，返回一个相对该 ```baseURL``` 的 ```URL```。
 
-#### fileURLWithPath(path: string): `URL | undefined`
+#### fileURLWithPath(path: `string`): `URL | undefined`
 使用文件路径创建一个 URL。
 
 ### Instance Fields

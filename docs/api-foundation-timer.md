@@ -7,7 +7,7 @@ title: Timer
 
 ## API
 
-### constructor(timeInterval: number, block: () => void, repeats: boolean)
+### constructor(timeInterval: `number`, block: `() => void`, repeats: `boolean`)
 
 * timeInterval - 在指定`秒`后执行。
 * block - 要执行的任务回调

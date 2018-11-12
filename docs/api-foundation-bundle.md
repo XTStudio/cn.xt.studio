@@ -19,13 +19,13 @@ title: Bundle
 
 ### Instance Methods
 
-#### resourcePath(name: string, type?: string, inDirectory?: string): `string | undefined` 
+#### resourcePath(name: `string`, type?: `string`, inDirectory?: `string`): `string | undefined` 
 
 获取当前包内的资源路径，其中 name 为文本名，type 为后缀, inDirectory 为相对目录。
 
 如果文件不存在，则返回 ```undefined```。
 
-#### resourceURL(name: string, type?: string, inDirectory?: string): URL | undefined: `string | undefined` 
+#### resourceURL(name: `string`, type?: `string`, inDirectory?: `string`): URL | undefined: `string | undefined` 
 
 获取当前包内的资源的绝对 URL 地址，其中 name 为文本名，type 为后缀, inDirectory 为相对目录。
 

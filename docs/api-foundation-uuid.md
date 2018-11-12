@@ -7,7 +7,7 @@ title: UUID
 
 ## API
 
-### constructor(UUIDString?: string)
+### constructor(UUIDString?: `string`)
 生成一个 UUID 标识符，如果第一个参数不为空，则使用给定的字符串作为标识符。
 
 ### Instance Fields

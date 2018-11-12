@@ -11,7 +11,7 @@ title: MutableURLRequest
 
 ## API
 
-### constructor(aURL: URL | string, cachePolicy?: URLRequestCachePolicy, timeout?: number)
+### constructor(aURL: `URL | string`, cachePolicy?: `URLRequestCachePolicy`, timeout?: `number`)
 
 * aURL - URL 或或 url 字符串。
 * cachePolicy - 缓存的处理方法，可选值[参考](./api-foundation-urlrequestcachepolicy.md)。
@@ -30,7 +30,7 @@ HTTP 的请求体内容。
 
 ### Instance Methods
 
-#### setValueForHTTPHeaderField(value: string, field: string): `void`
+#### setValueForHTTPHeaderField(value: `string`, field: `string`): `void`
 将指定的内容设置到 HTTP 头部信息指定键中。
 
 #### immutable(): `URLRequest`

@@ -29,29 +29,29 @@ title: FileManager
 
 ### Instance Methods
 
-#### subpaths(atPath: string, deepSearch?: boolean = true): `string[]`
+#### subpaths(atPath: `string`, deepSearch?: `boolean` = true): `string[]`
 遍历指定目录下的所有文件，并返回路径数组，当 ```deepSearch``` 为 ```true``` 时，会进行深度遍历。
 
-#### createDirectory(atPath: string, withIntermediateDirectories: boolean): `Error | undefined`
+#### createDirectory(atPath: `string`, withIntermediateDirectories: `boolean`): `Error | undefined`
 在指定路径创建文件夹，创建失败时返回 ```Error```，否则返回 ```undefined```。
 
-#### createFile(atPath: string, data: Data): `Error | undefined`
+#### createFile(atPath: `string`, data: `Data`): `Error | undefined`
 在指定路径写入文件，写入失败时返回 ```Error```，否则返回 ```undefined```。
 
-#### readFile(atPath: string): `Data | undefined`
+#### readFile(atPath: `string`): `Data | undefined`
 读取指定路径的文件内容，成功后返回 ```Data``` 实例，读取失败时返回 ```undefined```。
 
-#### removeItem(atPath: string): `Error | undefined`
+#### removeItem(atPath: `string`): `Error | undefined`
 删除指定路径文件或文件夹，失败时返回 ```Error```，否则返回 ```undefined```。
 
-#### copyItem(atPath: string, toPath: string): `Error | undefined`
+#### copyItem(atPath: `string`, toPath: `string`): `Error | undefined`
 复制指定路径文件到目录路径，失败时返回 ```Error```，否则返回 ```undefined```。
 
-#### moveItem(atPath: string, toPath: string): `Error | undefined`
+#### moveItem(atPath: `string`, toPath: `string`): `Error | undefined`
 移动指定路径文件到目录路径，失败时返回 ```Error```，否则返回 ```undefined```。
 
-#### fileExists(atPath: string): `boolean`
+#### fileExists(atPath: `string`): `boolean`
 检查指定路径文件是否存在。
 
-#### dirExists(atPath: string): `boolean`
+#### dirExists(atPath: `string`): `boolean`
 检查指定路径文件夹是否存在。

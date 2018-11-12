@@ -7,7 +7,7 @@ title: URLRequest
 
 ## API
 
-### constructor(aURL: URL | string, cachePolicy?: URLRequestCachePolicy, timeout?: number)
+### constructor(aURL: `URL | string`, cachePolicy?: `URLRequestCachePolicy`, timeout?: `number`)
 
 * aURL - URL 或或 url 字符串。
 * cachePolicy - 缓存的处理方法，可选值[参考](./api-foundation-urlrequestcachepolicy.md)。
@@ -29,7 +29,7 @@ HTTP 的请求体内容。
 
 ### Instance Methods
 
-#### valueForHTTPHeaderField(field: string): `any | undefined`
+#### valueForHTTPHeaderField(field: `string`): `any | undefined`
 从 HTTP 请求头中，返回指定键的内容。
 
 #### mutable(): `MutableURLRequest`

@@ -23,5 +23,7 @@ alert.show(() => {
 ### constructor(message: `string`, buttonText?: `string`)
 初始化对话框，必须提示一段文本用以显示。
 
-#### show(): `void`
+### Instance Methods
+
+#### show(completed?: `() => void`): `void`
 弹出对话框。

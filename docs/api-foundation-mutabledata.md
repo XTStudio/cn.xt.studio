@@ -20,13 +20,13 @@ title: MutableData
 
 ### Instance Methods
 
-#### appendData(data: Data): `void`
+#### appendData(data: `Data`): `void`
 往数据的末端添加数据。
 
-#### appendArrayBuffer(arrayBuffer: ArrayBufferLike): `void`
+#### appendArrayBuffer(arrayBuffer: `ArrayBuffer`): `void`
 往数据的末端添加 ```ArrayBuffer``` 数据。
 
-#### setData(data: Data): `void`
+#### setData(data: `Data`): `void`
 使用 ```data``` 重置所有数据。
 
 #### immutable(): `Data`

@@ -14,7 +14,7 @@ title: URLSession
 
 ### Instance Methods
 
-#### dataTask(req: $0, complete: $1): `URLSessionTask`
+#### dataTask(req: `$0`, complete: `$1`): `URLSessionTask`
 
 返回一个 Task 实例，请求参数如下。
 

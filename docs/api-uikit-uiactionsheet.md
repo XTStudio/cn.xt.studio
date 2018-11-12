@@ -3,7 +3,7 @@ author: Pony Cui
 title: UIActionSheet
 ---
 
-弹出一个多选项对话框。
+展示一个多选项对话框。
 
 ## Preview
 
