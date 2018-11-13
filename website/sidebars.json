@@ -79,9 +79,23 @@
       "api-uikit-uilinebreakmode",
       "api-uikit-uilongpressgesturerecognizer",
       "api-uikit-uimenu",
+      "api-uikit-uimutableattributedstring",
+      "api-uikit-uinavigationbar",
+      "api-uikit-uinavigationbarviewcontroller",
+      "api-uikit-uinavigationcontroller",
+      "api-uikit-uinavigationitem",
+      "api-uikit-uipageviewcontroller",
       "api-uikit-uipangesturerecognizer",
+      "api-uikit-uipasteboard",
       "api-uikit-uipinchgesturerecognizer",
+      "api-uikit-uipoint",
+      "api-uikit-uiprogressview",
+      "api-uikit-uirange",
+      "api-uikit-uirect",
       "api-uikit-uirotationgesturerecognizer",
+      "api-uikit-uisize",
+      "api-uikit-uislider",
+      "api-uikit-uiswitch",
       "api-uikit-uitapgesturerecognizer"
     ]
   }
