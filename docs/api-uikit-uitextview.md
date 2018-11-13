@@ -5,6 +5,10 @@ title: UITextView
 
 用于展示一个多行文本输入框，具体使用方法参阅[教程](./guide-input.md)。
 
+## Extends
+
+[UIView](./api-uikit-uiview.md)
+
 ## API
 
 ### Instance Fields

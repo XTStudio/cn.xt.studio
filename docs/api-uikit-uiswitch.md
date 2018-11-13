@@ -5,6 +5,10 @@ title: UISwitch
 
 用于渲染一个开关按钮视图。
 
+## Extends
+
+[UIView](./api-uikit-uiview.md)
+
 ## Preview
 
 ![](./assets/api-uikit-uiswitch.png)

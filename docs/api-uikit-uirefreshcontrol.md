@@ -5,6 +5,10 @@ title: UIRefreshControl
 
 创建一个下拉刷新控制器，配合 ```UIScrollView``` 使用，用法参考[教程](./guide-scroller.md)。
 
+## Extends
+
+[UIView](./api-uikit-uiview.md)
+
 ## API
 
 ### Instance Fields

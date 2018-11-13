@@ -39,6 +39,9 @@ title: UICollectionView
 #### selectItem(indexPath: `UIIndexPath`, animated: `boolean`): `void`
 选中指定元素。
 
+#### deselectItem(indexPath: `UIIndexPath`, animated: `boolean`): `void`
+取消选中指定元素。
+
 ### Events
 
 #### "numberOfSections": `() => number`
@@ -55,6 +58,3 @@ title: UICollectionView
 
 #### "didDeselectItem": `(indexPath: UIIndexPath, cell: UICollectionViewCell) => void`
 当用户再次点按已选中元素视图时触发。
-
-#### deselectItem(indexPath: `UIIndexPath`, animated: `boolean`): `void`
-取消选中指定元素。

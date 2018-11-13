@@ -5,6 +5,10 @@ title: UIFetchMoreControl
 
 创建一个加载更多控制器，配合 ```UIScrollView``` 使用，用法参考[教程](./guide-scroller.md)。
 
+## Extends
+
+[UIView](./api-uikit-uiview.md)
+
 ## API
 
 ### Instance Fields

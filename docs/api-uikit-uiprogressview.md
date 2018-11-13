@@ -5,6 +5,10 @@ title: UIProgressView
 
 用于渲染一个进度条视图。
 
+## Extends
+
+[UIView](./api-uikit-uiview.md)
+
 ## Preview
 
 ![](./assets/api-uikit-uiprogress.png)

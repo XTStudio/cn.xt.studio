@@ -85,3 +85,17 @@ title: UIViewController
 
 #### setNeedsStatusBarAppearanceUpdate(): `void`
 触发状态栏样式修改。
+
+### Events
+
+#### "viewWillLayoutSubviews": (sender: UIViewController) => void
+当 `viewWillLayoutSubviews` 方法被调用时触发。
+
+#### "keyboardWillShow": (keyboardRect: UIRect, animationDuration: number) => void
+当键盘即将弹出时触发。
+
+#### "keyboardWillHide": (animationDuration: number) => void
+当键盘即将收起时触发。
+
+#### "statusBarStyle": () => UIStatusBarStyle
+应在此回调中返回状态栏样式，以达到修改状态栏样式的目的。

@@ -5,6 +5,10 @@ title: UINavigationBar
 
 渲染一个导航栏。
 
+## Extends
+
+[UIView](./api-uikit-uiview.md)
+
 ## API
 
 ### Instance Fields

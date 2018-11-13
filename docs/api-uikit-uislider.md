@@ -5,6 +5,10 @@ title: UISlider
 
 用于渲染一个滑杆视图。
 
+## Extends
+
+[UIView](./api-uikit-uiview.md)
+
 ## Preview
 
 ![](./assets/api-uikit-uislider.png)

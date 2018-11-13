@@ -9,6 +9,10 @@ title: UIButton
 
 [UIView](./api-uikit-uiview.md)
 
+## Extends
+
+[UIView](./api-uikit-uiview.md)
+
 ## Preview
 
 ![](assets/api-uikit-uibutton.png)

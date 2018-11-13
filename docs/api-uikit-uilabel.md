@@ -5,6 +5,10 @@ title: UILabel
 
 用于渲染文本，具体使用方法参阅[教程](./guide-label.md)。
 
+## Extends
+
+[UIView](./api-uikit-uiview.md)
+
 ## API
 
 ### Instance Fields

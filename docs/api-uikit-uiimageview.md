@@ -5,6 +5,10 @@ title: UIImageView
 
 用于渲染图像，具体使用方法参阅[教程](./guide-image.md)。
 
+## Extends
+
+[UIView](./api-uikit-uiview.md)
+
 ## API
 
 ### Instance Fields

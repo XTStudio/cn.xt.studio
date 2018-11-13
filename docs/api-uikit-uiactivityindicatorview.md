@@ -5,6 +5,10 @@ title: UIActivityIndicatorView
 
 展示一个 Loading 指示器。
 
+## Extends
+
+[UIView](./api-uikit-uiview.md)
+
 ## Preview
 
 ![](assets/api-uikit-uiactivityindicatorview.png)

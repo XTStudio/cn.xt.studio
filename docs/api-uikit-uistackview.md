@@ -5,6 +5,10 @@ title: UIStackView
 
 用于渲染一个栈布局视图。
 
+## Extends
+
+[UIView](./api-uikit-uiview.md)
+
 ## API
 
 ### constructor(arrangedSubviews: `UIView[]`)

@@ -5,6 +5,10 @@ title: UINavigationController
 
 导航控制器，具体使用方法请参阅[教程](./guide-navigationcontroller.md)。
 
+## Extends
+
+[UIViewController](./api-uikit-uiviewcontroller.md)
+
 ## API
 
 ### constructor(rootViewController?: `UIViewController`)

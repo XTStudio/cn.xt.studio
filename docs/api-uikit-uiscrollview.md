@@ -5,6 +5,10 @@ title: UIScrollView
 
 用于渲染一个滚动视图，具体使用方法请参阅[教程](./guide-scroller.md)。
 
+## Extends
+
+[UIView](./api-uikit-uiview.md)
+
 ## API
 
 ### Instance Fields

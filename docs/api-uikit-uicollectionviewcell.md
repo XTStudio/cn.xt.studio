@@ -28,4 +28,4 @@ title: UICollectionViewCell
 当 Cell 被选中时触发。
 
 #### "highlighted": `(sender: UICollectionViewCell, highlighted: boolean) => void`
-当 Cell 被取消选中时触发。
+当 Cell 进入高亮状态时触发。
