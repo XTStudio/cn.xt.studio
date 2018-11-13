@@ -63,7 +63,26 @@
       "api-uikit-uicontrolcontenthorizontalalignment",
       "api-uikit-uicontrolcontentverticalalignment",
       "api-uikit-uicontrolstate",
-      "api-uikit-uidevice"
+      "api-uikit-uidevice",
+      "api-uikit-uiedgeinsets",
+      "api-uikit-uifetchmorecontrol",
+      "api-uikit-uifont",
+      "api-uikit-uigesturerecognizer",
+      "api-uikit-uigesturerecognizerstate",
+      "api-uikit-uiimage",
+      "api-uikit-uiimagerenderingmode",
+      "api-uikit-uiimageview",
+      "api-uikit-uiindexpath",
+      "api-uikit-uikeyboardtype",
+      "api-uikit-uilabel",
+      "api-uikit-uilayoutconstraintaxis",
+      "api-uikit-uilinebreakmode",
+      "api-uikit-uilongpressgesturerecognizer",
+      "api-uikit-uimenu",
+      "api-uikit-uipangesturerecognizer",
+      "api-uikit-uipinchgesturerecognizer",
+      "api-uikit-uirotationgesturerecognizer",
+      "api-uikit-uitapgesturerecognizer"
     ]
   }
 }
