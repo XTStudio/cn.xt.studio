@@ -24,6 +24,11 @@
     "索引": [
       "api-index"
     ],
+    "KIMI": [
+      "api-kimi-console",
+      "api-kimi-global",
+      "api-kimi-kmcore"
+    ],
     "Foundation": [
       "api-foundation-bundle",
       "api-foundation-data",
@@ -124,6 +129,15 @@
       "api-uikit-uiviewcontroller",
       "api-uikit-uiwebview",
       "api-uikit-uiwindow"
+    ],
+    "CoreGraphics": [
+      "api-coregraphics-cadisplaylink",
+      "api-coregraphics-cagradientlayer",
+      "api-coregraphics-calayer",
+      "api-coregraphics-cashapefillrule",
+      "api-coregraphics-cashapelayer",
+      "api-coregraphics-cashapelinecap",
+      "api-coregraphics-cashapelinejoin"
     ]
   }
 }

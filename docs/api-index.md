@@ -5,9 +5,9 @@ title: 总览
 
 ## Kimi
 
-* KMCore
-* console
-* global
+* [KMCore](./api-kimi-kmcore.md)
+* [console](./api-kimi-console.md)
+* [global](./api-kimi-global.md)
 
 ## Foundation
 
@@ -114,10 +114,10 @@ title: 总览
 
 ## CoreGraphics
 
-* CADisplayLink
-* CAGradientLayer
-* CALayer
-* CAShapeLayer
-* CAShapeFillRule
-* CAShapeLineCap
-* CAShapeLineJoin
+* [CADisplayLink](./api-coregraphics-cadisplaylink.md)
+* [CAGradientLayer](./api-coregraphics-cagradientlayer.md)
+* [CALayer](./api-coregraphics-calayer.md)
+* [CAShapeLayer](./api-coregraphics-cashapefillrule.md)
+* [CAShapeFillRule](./api-coregraphics-cashapelayer.md)
+* [CAShapeLineCap](./api-coregraphics-cashapelinecap.md)
+* [CAShapeLineJoin](./api-coregraphics-cashapelinejoin.md)
