@@ -22,7 +22,7 @@ const users = [
 
 const siteConfig = {
   title: 'XT',
-  tagline: 'A Cross-platform Application Framework.',
+  tagline: '使用 TypeScript 编写跨平台应用',
   url: 'https://xt.studio',
   baseUrl: '/',
   projectName: 'xt-studio',
@@ -34,24 +34,21 @@ const siteConfig = {
     {blog: true, label: '动态'},
   ],
   users,
-  headerIcon: 'img/docusaurus.svg',
-  footerIcon: 'img/docusaurus.svg',
-  favicon: 'img/favicon.png',
+  headerIcon: 'img/xt-logo-white.png',
+  footerIcon: 'img/xt-logo-white.png',
+  favicon: 'img/xt-logo.png',
   colors: {
-    primaryColor: '#2E8555',
-    secondaryColor: '#205C3B',
+    primaryColor: '#00a0e9',
+    secondaryColor: '#00a0e9',
   },
   copyright: `Copyright © ${new Date().getFullYear()} XT Studio`,
   highlight: {
     theme: 'default',
   },
   usePrism: ['typescript'],
-  // scripts: ['https://buttons.github.io/buttons.js'],
   onPageNav: 'separate',
   cleanUrl: true,
-  ogImage: 'img/docusaurus.png',
-  twitterImage: 'img/docusaurus.png',
-  repoUrl: 'https://github.com/xtstudio/xtstudio',
+  repoUrl: 'https://github.com/xtstudio/xt',
 };
 
 module.exports = siteConfig;
