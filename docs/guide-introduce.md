@@ -16,7 +16,7 @@ XT 致力于在不同平台（iOS / Android / Web），通过一致的界面、�
 * 在学习 XT 前，请确保你已经掌握 [TypeScript](https://www.tslang.cn/) 以及 [NodeJS](https://nodejs.org/en/) 开发环境的使用。
 * 你不需要精通相关平台开发，只需掌握对应平台的构建方法即可。
 
-尝试 XT 最简单的方法是使用 [JSBin 上的 Hello World 例子](https://jsbin.com/cuhevor/2/edit?js,output)。你可以在浏览器新标签页中打开它，跟着例子学习一些基础用法。
+尝试 XT 最简单的方法是使用 [JSBin 上的 Hello World 例子](https://jsbin.com/cuhevor/edit?js,output)。你可以在浏览器新标签页中打开它，跟着例子学习一些基础用法。
 
 在 JSBin 上使用时，你将无法使用代码提示功能，你需要使用 VSCode 才能获得代码提示能力。
 
@@ -86,7 +86,7 @@ class MainViewController extends UIViewController {
 
 ## 视图层级
 
-在 XT 中， 你可以使用 ```addSubview``` 方法添加一个子视图。（[例子](https://jsbin.com/yanokic/3/edit?js,output)）
+在 XT 中， 你可以使用 ```addSubview``` 方法添加一个子视图。（[例子](https://jsbin.com/yanokic/edit?js,output)）
 
 ```typescript
 class MainViewController extends UIViewController {

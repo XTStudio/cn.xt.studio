@@ -47,7 +47,7 @@ const siteConfig = {
   },
   usePrism: ['typescript'],
   onPageNav: 'separate',
-  cleanUrl: true,
+  cleanUrl: false,
   repoUrl: 'https://github.com/xtstudio/xt',
 };
 

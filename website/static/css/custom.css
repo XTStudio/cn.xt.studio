@@ -87,3 +87,15 @@
     }
 
 }
+
+.navPusher {
+    padding-top: 50px;
+}
+
+.navigationSlider .slidingNav ul {
+    margin-top: 0px;
+}
+
+.navigationSlider {
+    z-index: 99999;
+}
