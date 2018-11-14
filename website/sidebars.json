@@ -10,7 +10,8 @@
       "guide-image",
       "guide-animator",
       "guide-viewcontroller",
-      "guide-navigationcontroller"
+      "guide-navigationcontroller",
+      "guide-networking"
     ],
     "开发": [
       "guide-init",

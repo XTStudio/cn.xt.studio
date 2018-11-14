@@ -50,7 +50,7 @@ title: 在 Android 中运行应用
 
 ## 监听日志
 
-在非 Debug 模式下，你需要借助 Android Studio 查看日志信息， 你可以通过『UULog』关键词过滤日志结果。
+在非 Debug 模式下，你需要借助 Android Studio 查看日志信息， 你可以通过『EDOLogger』关键词过滤日志结果。
 
 在 Debug 模式下，在执行 ```npm run debug``` 的终端中，会打印接收到的日志。
 
