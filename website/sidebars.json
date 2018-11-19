@@ -13,6 +13,12 @@
       "guide-navigationcontroller",
       "guide-networking"
     ],
+    "进阶": [
+      "guide-timer",
+      "guide-javascript",
+      "guide-await",
+      "guide-userdefaults"
+    ],
     "开发": [
       "guide-init",
       "guide-vscode",
