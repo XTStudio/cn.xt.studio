@@ -1,6 +1,6 @@
 ---
 author: Pony Cui
-title: 配置信息持久化
+title: 持久化
 ---
 
 要实现数据的持久化，你可以使用 ```FileManager``` 将数据写入文件，而对于小量的 KeyValue 配置信息，则可以使用 ```UserDefaults``` 进行持久化。

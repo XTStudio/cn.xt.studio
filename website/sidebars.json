@@ -17,7 +17,9 @@
       "guide-timer",
       "guide-javascript",
       "guide-await",
-      "guide-userdefaults"
+      "guide-userdefaults",
+      "guide-ios-ext-regular",
+      "guide-ios-ext-view"
     ],
     "开发": [
       "guide-init",
