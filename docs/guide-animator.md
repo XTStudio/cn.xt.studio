@@ -14,7 +14,7 @@ XT 使用 ```UIAnimator``` 创建动画，提供四种补间动画。
 
 ## 创建一个简单的动画
 
-XT 的动画 API 与 iOS 原生开发十分类似，只需要在 Block 中指定动画元素的终点，即可。[（示例）](https://jsbin.com/pidoyuk/edit?js,output)
+XT 的动画 API 与 iOS 原生开发十分类似，只需要在 Block 中指定动画元素的终点，即可。[（示例）](https://stackblitz.com/edit/xt-sample-uianimator)
 
 ```typescript
 class MainViewController extends UIViewController {
@@ -54,7 +54,7 @@ class MainViewController extends UIViewController {
 
 XT 提供两种弹性补间，底层的实现是借助 Facebook 开源的 [Rebound](http://facebook.github.io/rebound/) 动画引擎。
 
-弹性动画的实现方法与曲线动画无异，请参考[示例](https://jsbin.com/nikofuy/edit?js,output)。
+弹性动画的实现方法与曲线动画无异，请参考[示例](https://stackblitz.com/edit/xt-sample-uianimator-spring)。
 
 ## 动画属性
 

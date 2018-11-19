@@ -79,7 +79,7 @@ class MainViewController extends UIViewController {
 
 ## 子控制器
 
-视图控制器可以嵌套子控制器，形成新的控制器树，这个概念与视图层级是一致的。子控制器被嵌套后，可以将父控制器的生命周期绑定到自身。开发者可以通过这种方式，进一步重构视图控制器。[（例子）](https://jsbin.com/noyamih/edit?js,output)
+视图控制器可以嵌套子控制器，形成新的控制器树，这个概念与视图层级是一致的。子控制器被嵌套后，可以将父控制器的生命周期绑定到自身。开发者可以通过这种方式，进一步重构视图控制器。[（例子）](https://stackblitz.com/edit/xt-sample-viewcontroller)
 
 ```typescript
 class RedViewController extends UIViewController {

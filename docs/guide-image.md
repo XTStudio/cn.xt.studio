@@ -63,7 +63,7 @@ const fooImage = new UIImage({name: "icon_base64@2x.png", base64: "base64 encode
 
 ## 渲染图片
 
-要将加载得到的 ```UIImage``` 在屏幕上显示，我们需要使用 ```UIImageView```。[（示例）](https://jsbin.com/fixotaf/edit?js,output)
+要将加载得到的 ```UIImage``` 在屏幕上显示，我们需要使用 ```UIImageView```。[（示例）](https://stackblitz.com/edit/xt-sample-uiimageview)
 
 ```typescript
 const image = new UIImage({base64: "iVBO..."})
@@ -88,7 +88,7 @@ class MainViewController extends UIViewController {
 
 ## 加载网络图片
 
-要加载网络图片，需要使用 ```UIImageView::loadImageWithURLString``` 方法。[（示例）](https://jsbin.com/fumayun/edit?js,output)
+要加载网络图片，需要使用 ```UIImageView::loadImageWithURLString``` 方法。[（示例）](https://stackblitz.com/edit/xt-sample-uiimageview-fromremote)
 
 ```typescript
 class MainViewController extends UIViewController {

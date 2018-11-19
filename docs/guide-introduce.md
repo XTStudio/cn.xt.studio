@@ -16,9 +16,7 @@ XT 致力于在不同平台（iOS / Android / Web），通过一致的界面、�
 * 在学习 XT 前，请确保你已经掌握 [TypeScript](https://www.tslang.cn/) 以及 [NodeJS](https://nodejs.org/en/) 开发环境的使用。
 * 你不需要精通相关平台开发，只需掌握对应平台的构建方法即可。
 
-尝试 XT 最简单的方法是使用 [JSBin 上的 Hello World 例子](https://jsbin.com/cuhevor/edit?js,output)。你可以在浏览器新标签页中打开它，跟着例子学习一些基础用法。
-
-在 JSBin 上使用时，你将无法使用代码提示功能，你需要使用 VSCode 才能获得代码提示能力。
+尝试 XT 最简单的方法是使用 StackBlitz，这是一个 VSCode 的线上版本，提供在线编码能力。你可以在浏览器新标签页中打开[示例](https://stackblitz.com/edit/xt-getting-start)，跟着例子学习一些基础用法。
 
 ## 使用代码描述界面
 
@@ -59,7 +57,7 @@ class MainViewController extends UIViewController {
 
 为了保证核心库的精简，我们去掉了所有的 Flex / Constraint / Relative 布局，取而代之的是 Frame 布局。
 
-为了说明 Frame 布局，我们创建了[另一个 JSBin 示例](https://jsbin.com/fugozah/edit?js,output)。
+为了说明 Frame 布局，我们创建了[另一个示例](https://stackblitz.com/edit/xt-sample-frame)。
 
 ```typescript
 class MainViewController extends UIViewController {
@@ -86,7 +84,7 @@ class MainViewController extends UIViewController {
 
 ## 视图层级
 
-在 XT 中， 你可以使用 ```addSubview``` 方法添加一个子视图。（[例子](https://jsbin.com/yanokic/edit?js,output)）
+在 XT 中， 你可以使用 ```addSubview``` 方法添加一个子视图。（[例子](https://stackblitz.com/edit/xt-sample-addsubview)）
 
 ```typescript
 class MainViewController extends UIViewController {
@@ -119,7 +117,7 @@ XT 通过对象嵌套对象的方式，构建完整的视图层级树，并使�
 
 ## 响应触摸
 
-我们使用 ```UIGestureRecognizer``` 类响应触摸事件，默认情况下，所有的 ```UIView``` 都是可触摸的，它们可以响应轻触、长按、拖动事件。[例子](https://jsbin.com/tisulu/edit?js,output)
+我们使用 ```UIGestureRecognizer``` 类响应触摸事件，默认情况下，所有的 ```UIView``` 都是可触摸的，它们可以响应轻触、长按、拖动事件。[例子](https://stackblitz.com/edit/xt-sample-touch)
 
 ```typescript
 this.redView.addGestureRecognizer(new UITapGestureRecognizer().on("touch", () => {

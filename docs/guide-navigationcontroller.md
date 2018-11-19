@@ -12,7 +12,7 @@ XT 使用导航控制器（```UINavigationController```）实现导航功能，�
 
 ## 一个简单的例子
 
-以下例子向我们展示了页面跳转的使用方法。[（示例）](https://jsbin.com/firiqoq/edit?js,output)
+以下例子向我们展示了页面跳转的使用方法。[（示例）](https://stackblitz.com/edit/xt-sample-navigationcontroller)
 
 ```typescript
 class SecondViewController extends UIViewController {
@@ -91,7 +91,7 @@ class MainViewController extends UIViewController {
 
 ### 定义导航栏按钮
 
-开发者可以为导航栏添加左侧和右侧按钮，可以是图标按钮也可以是文字按钮。[（示例）](https://jsbin.com/dilugey/edit?js,output)
+开发者可以为导航栏添加左侧和右侧按钮，可以是图标按钮也可以是文字按钮。[（示例）](https://stackblitz.com/edit/xt-sample-navigationitem)
 
 ```typescript
 const item = new UIBarButtonItem
@@ -106,4 +106,4 @@ this.navigationItem.rightBarButtonItem = item
 
 由于平台差异，XT 在 iOS 和 Android / Web 上的导航栏样式并不一致。当开发者需要定制导航栏时，可以使用 ```UINavigationBarViewController``` 替代 ```UIViewController```。
 
-该控制器，提供两个视图，```navigationBar``` 和 ```view```，开发者可自行添加对应子视图以实现自定义导航栏的目的。[（示例）](https://jsbin.com/dilugey/edit?js,output)
+该控制器，提供两个视图，```navigationBar``` 和 ```view```，开发者可自行添加对应子视图以实现自定义导航栏的目的。[（示例）](https://stackblitz.com/edit/xt-sample-navigationbarviewcontroller)

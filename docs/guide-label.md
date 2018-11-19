@@ -17,11 +17,11 @@ title: 文本渲染
 * lineBreakMode: UILineBreakMode - 文本换行方式
 * numberOfLines: number - 最大容纳文本行数
 
-具体样式表现，请参考[例子](https://jsbin.com/nefubuy/edit?js,output)。
+具体样式表现，请参考[例子](https://stackblitz.com/edit/xt-sample-label)。
 
 ## 标签文本
 
-你可以使用 ```UIAttributedString``` 类渲染标签文本，通过标签文本，可以为同一段文本中赋予不同的样式。[（例子）](https://jsbin.com/mokefay/edit?js,output)
+你可以使用 ```UIAttributedString``` 类渲染标签文本，通过标签文本，可以为同一段文本中赋予不同的样式。[（例子）](https://stackblitz.com/edit/xt-sample-attributedtext)
 
 ```typescript
 class MainViewController extends UIViewController {

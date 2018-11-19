@@ -18,7 +18,7 @@ title: 滚动视图
 
 ## 一个简单的例子
 
-我们用一个简单的[例子](https://jsbin.com/firequg/edit?js,output)描述 ```UISrollView``` 的用法。
+我们用一个简单的[例子](https://stackblitz.com/edit/xt-sample-scroller)描述 ```UISrollView``` 的用法。
 
 ```typescript
 class MainViewController extends UIViewController {
@@ -73,13 +73,13 @@ class MainViewController extends UIViewController {
 
 ## 分页滚动
 
-要实现分页滚动，只需要将 ```pagingEnabled``` 设为 ```true``` 即可。[（例子）](https://jsbin.com/mituwej/edit?js,output)
+要实现分页滚动，只需要将 ```pagingEnabled``` 设为 ```true``` 即可。[（例子）](https://stackblitz.com/edit/xt-sample-scroller-paging)
 
 而对于复杂的分页滚动，可以使用 ```UIPageViewController``` 实现。
 
 ## 下拉刷新
 
-在列表视图中，下拉刷新是常见的需求，XT 已经封装好对应控件（目前还未能自定义样式）。[（示例）](https://jsbin.com/bonorum/edit?js,output)
+在列表视图中，下拉刷新是常见的需求，XT 已经封装好对应控件（目前还未能自定义样式）。[（示例）](https://stackblitz.com/edit/xt-sample-scroller-refresh)
 
 ```typescript
 this.scrollView.addSubview(new UIRefreshControl().on("refresh", (sender: UIRefreshControl) => {

@@ -16,7 +16,7 @@ title: 列表视图
 
 ## 一个简单的例子
 
-我们使用通讯录列表作为例子，尝试为你阐释列表视图的使用。[（例子）](https://jsbin.com/xegajew/edit?js,output)
+我们使用通讯录列表作为例子，尝试为你阐释列表视图的使用。[（例子）](https://stackblitz.com/edit/xt-sample-tableview)
 
 请进入例子阅读代码，我们逐一分解例子。
 
@@ -98,7 +98,7 @@ this.tableView.on("didSelectRow", (indexPath: UIIndexPath) => {
 
 ## 多个章节的列表
 
-列表视图可以轻松应对存在多个章节的情况，仍然使用通讯录作为示例，我们按字母进行排序，每一个字母是一个章节。[（例子）](https://jsbin.com/hejumaw/edit?js,output)
+列表视图可以轻松应对存在多个章节的情况，仍然使用通讯录作为示例，我们按字母进行排序，每一个字母是一个章节。[（例子）](https://stackblitz.com/edit/xt-sample-tableview-sections)
 
 ### 修改数据源
 
@@ -183,7 +183,7 @@ this.tableView.on("viewForHeader", (inSection: number) => {
 
 ## 列表视图头部和底部视图
 
-你可以向列表视图添加一个头部视图。[（例子）](https://jsbin.com/gahapez/edit?js,output)
+你可以向列表视图添加一个头部视图。[（例子）](https://stackblitz.com/edit/xt-sample-tableview-header)
 
 ```typescript
 const headerView = new UIView

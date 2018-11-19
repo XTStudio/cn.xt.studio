@@ -11,7 +11,7 @@ title: 网络
 
 要从任意地址获取内容的话，只需简单地将网址作为参数传递给 ```dataTask``` 方法即可。
 
-这个例子将向 `https://api.github.com` 发起 GET 请求，如果请求成功，将得到一个 `Data` 实例。[（示例）](https://jsbin.com/qegabos/edit?js,output)
+这个例子将向 `https://api.github.com` 发起 GET 请求，如果请求成功，将得到一个 `Data` 实例。[（示例）](https://stackblitz.com/edit/xt-sample-networking)
 
 ```typescript
 URLSession.shared.dataTask("https://api.github.com", (data, res, error) => {
@@ -29,7 +29,7 @@ URLSession.shared.dataTask("https://api.github.com", (data, res, error) => {
 
 ## 发起 POST 请求
 
-你需要使用 ```MutableURLRequest``` 类创建请求，并使用 ```URLSession``` 发起 POST 请求。[（示例）](https://jsbin.com/zivuwuw/edit?js,output)
+你需要使用 ```MutableURLRequest``` 类创建请求，并使用 ```URLSession``` 发起 POST 请求。[（示例）](https://stackblitz.com/edit/xt-sample-networking-post)
 
 ```typescript
 const request = new MutableURLRequest("https://api.github.com")

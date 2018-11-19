@@ -19,7 +19,7 @@ title: 处理文本输入
 
 ### 一个简单的例子
 
-我们使用 ```UITextField``` 实现一个登录界面，该界面有两个输入框（用户名、密码），并模拟登录的过程。[（例子）](https://jsbin.com/jibajot/edit?js,output)
+我们使用 ```UITextField``` 实现一个登录界面，该界面有两个输入框（用户名、密码），并模拟登录的过程。[（例子）](https://stackblitz.com/edit/xt-sample-uitextfield)
 
 ```typescript
 class MainViewController extends UIViewController {
@@ -83,7 +83,7 @@ class MainViewController extends UIViewController {
 
 ### 左侧视图
 
-你可以为 ```UITextField``` 添加左侧、右侧视图，该视图会在特定场景下出现。[（例子）](https://jsbin.com/bekemek/edit?js,output)
+你可以为 ```UITextField``` 添加左侧、右侧视图，该视图会在特定场景下出现。[（例子）](https://stackblitz.com/edit/xt-sample-uitextfield-extraview)
 
 ```typescript
 const leftView = new UIView

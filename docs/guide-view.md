@@ -19,7 +19,7 @@ title: 视图
 
 ### 视图的添加与删除
 
-你可以使用以下 API 对子视图进行添加、删除操作。[（例子）](https://jsbin.com/giyokew/edit?js,output)
+你可以使用以下 API 对子视图进行添加、删除操作。[（例子）](https://stackblitz.com/edit/xt-sample-view)
 
 * removeFromSuperview(): void
 * insertSubviewAtIndex(view: UIView, index: number): void
@@ -33,7 +33,7 @@ title: 视图
 
 ### 显示顺序
 
-越往后添加的图层，层级越高，你可以使用以下方法修改特定图层层级。[（例子）](https://jsbin.com/disugon/edit?js,output)
+越往后添加的图层，层级越高，你可以使用以下方法修改特定图层层级。[（例子）](https://stackblitz.com/edit/xt-sample-view)
 
 * exchangeSubview(index1: number, index2: number): void
 * bringSubviewToFront(view: UIView): void
@@ -41,7 +41,7 @@ title: 视图
 
 ### 超出边界的处理
 
-默认情况，当视图可以超出父视图的边界时，视图可以被正常渲染，如果你需要禁止这个行为，可以将 ```clipsToBounds``` 属性设为 ```true```。[（例子）](https://jsbin.com/mevoga/edit?js,output)
+默认情况，当视图可以超出父视图的边界时，视图可以被正常渲染，如果你需要禁止这个行为，可以将 ```clipsToBounds``` 属性设为 ```true```。[（例子）](https://stackblitz.com/edit/xt-sample-viewmaskstobounds)
 
 ### 生命周期
 
@@ -76,7 +76,7 @@ title: 视图
 
 ### 子视图布局
 
-当 ```frame``` 属性被修改后，```layoutSubviews``` 方法会被调用，在此时对子视图进行布局。[（例子）](https://jsbin.com/worego/edit?js,output)
+当 ```frame``` 属性被修改后，```layoutSubviews``` 方法会被调用，在此时对子视图进行布局。[（例子）](https://stackblitz.com/edit/xt-sample-view-layoutsubviews)
 
 ```typescript
 class MainView extends UIView {
@@ -118,7 +118,7 @@ class MainView extends UIView {
 * 使用 ```layer.borderWidth``` 和 ```layer.borderColor``` 为视图添加边框。
 * 使用 ```layer.shadowColor``` / ```layer.shadowOpacity``` / ```layer.shadowOffset``` / ```layer.shadowRadius``` 为视图添加阴影。
 
-具体用法请查看[例子](https://jsbin.com/jipenot/edit?js,output)。
+具体用法请查看[例子](https://stackblitz.com/edit/xt-sample-view-style)。
 
 ## 下一步
 
