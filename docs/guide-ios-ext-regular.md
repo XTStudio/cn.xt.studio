@@ -39,7 +39,7 @@ XT 的核心是 [`engine`](https://github.com/XTStudio/engine-ios.git) 库，通
 
 ## 导出示例
 
-在导出教学前，建议你先下载我们的模板工程。
+在教学前，建议先下载[模板工程](https://github.com/XTStudio/sample-ext)。
 
 ### FooManager
 
@@ -49,6 +49,7 @@ XT 的核心是 [`engine`](https://github.com/XTStudio/engine-ios.git) 库，通
 * 导出可读可写实例属性 `name`，类型为 `NSString`。
 * 导出只读实例属性 `location`，类型为 `NSString`。
 * 导出实例方法 `changeName`。
+* 在 JS 端监听 `locationChanged` 事件，并响应变化。
 
 ### 创建原生类
 
@@ -89,8 +90,22 @@ XT 的核心是 [`engine`](https://github.com/XTStudio/engine-ios.git) 库，通
     return instance;
 }
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(6.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            staticLocation = @"广州";
+            [self edo_emitWithEventName:@"locationChanged" arguments:nil];
+        });
+    }
+    return self;
+}
+
+static NSString *staticLocation = @"佛山";
+
 - (NSString *)location {
-    return @"佛山";
+    return staticLocation;
 }
 
 - (void)changeName:(NSString *)name {
@@ -185,11 +200,20 @@ XT 的核心是 [`engine`](https://github.com/XTStudio/engine-ios.git) 库，通
 回到 `TypeScript` 工程，在工程目录下添加 `[YourProjectName].d.ts` 文件。接着编写 `typing` 描述（如果忽略这一步，TypeScript 将无法编译通过哦）。
 
 ```typescript
+interface FooManagerEventMap extends BaseEventMap {
+    "locationChanged": () => void,
+}
+
 declare class FooManager {
     static sharedManager(): FooManager
     name: string
     readonly location: string
     changeName(name: string): void
+    // EventEmitter
+    on<K extends keyof FooManagerEventMap>(type: K, listener: FooManagerEventMap[K]): this
+    once<K extends keyof FooManagerEventMap>(type: K, listener: FooManagerEventMap[K]): this
+    off<K extends keyof FooManagerEventMap>(type: K, listener: FooManagerEventMap[K]): this
+    emit<K extends keyof FooManagerEventMap>(type: K, ...args: any[]): this
 }
 ```
 
@@ -214,6 +238,9 @@ class MainViewController extends UIViewController {
             FooManager.sharedManager().changeName("Benji")
             this.fooLabel.text = `${FooManager.sharedManager().name} @${FooManager.sharedManager().location}`
         })
+        FooManager.sharedManager().on("locationChanged", () => {
+            this.fooLabel.text = `${FooManager.sharedManager().name} @${FooManager.sharedManager().location}`
+        })
     }
 
     viewWillLayoutSubviews() {
@@ -226,7 +253,7 @@ class MainViewController extends UIViewController {
 global.main = new MainViewController
 ```
 
-在命令行执行 `npm run build` 后，从 Xcode 中启动应用，如果出现 `Pony @佛山`，并且在 3 秒后变为 `Benji @佛山`。恭喜你，你已经完成了第一个扩展类。
+在命令行执行 `npm run build` 后，从 Xcode 中启动应用，如果出现 `Pony @佛山`，在 3 秒后变为 `Benji @佛山`，在 6 秒后变为 `Benji @广州`。恭喜，你已经完成了第一个扩展类。
 
 ## 前缀规则
 
