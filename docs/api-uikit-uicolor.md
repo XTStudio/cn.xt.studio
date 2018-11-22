@@ -18,5 +18,10 @@ title: UIColor
 #### blue: `UIColor` *`readonly`*
 #### white: `UIColor` *`readonly`*
 
+### Static Methods
+
+#### hexColor(hexValue: `string`): `UIColor`
+使用 RGB 或 ARGB 16 进制值创建 `UIColor`
+
 ### constructor(r: `number`, g: `number`, b: `number`, a: `number`)
 使用 RGBA 创建颜色，有效值为 [0.0, 1.0]

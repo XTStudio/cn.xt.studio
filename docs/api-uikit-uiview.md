@@ -39,6 +39,9 @@ title: UIView
 #### window: `UIWindow | undefined` *`readonly`*
 附着的窗口。
 
+#### viewController: `UIViewController | undefined` *`readonly`*
+附着的视图控制器，会返回一个距离该视图最近位置的控制器。
+
 #### clipsToBounds: `boolean`
 是否裁剪边界。
 
@@ -145,3 +148,15 @@ title: UIView
 
 #### removeGestureRecognizer(gestureRecognizer: `UIGestureRecognizer`): `void`
 从本视图中移除一个手势识别器。
+
+#### convertPointToView(point: UIPoint, toView: UIView): UIPoint
+给予一个本视图的坐标点，返回该点映射到指定视图的坐标。
+
+#### convertPointFromView(point: UIPoint, toView: UIView): UIPoint
+给予一个指定视图的坐标点，返回该点映射到本视图的坐标。
+
+#### convertRectToView(rect: UIRect, toView: UIView): UIRect
+给予一个本视图的 rect，返回该点映射到指定视图的 rect。
+
+#### convertRectFromView(rect: UIPoint, fromView: UIView): UIPoint
+给予一个指定视图的 rect，返回该点映射到本视图的 rect。

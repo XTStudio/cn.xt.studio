@@ -13,3 +13,8 @@ title: UIRange
     length: number
 }
 ```
+
+## Functions
+
+#### UIRangeMake(location: `number`, length: `number`): `UIRange`
+使用 location 和 length 创建 `UIRange` 对象。

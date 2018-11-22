@@ -7,6 +7,11 @@ title: Timer
 
 ## API
 
+### Static Methods
+
+#### sleep(timeInterval: `number`): `Promise<any>`
+返回一个 `Promise` 实例，在指定`秒`后执行 `then` 中的 `resolver`。
+
 ### constructor(timeInterval: `number`, block: `() => void`, repeats: `boolean`)
 
 * timeInterval - 在指定`秒`后执行。

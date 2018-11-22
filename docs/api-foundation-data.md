@@ -19,6 +19,9 @@ title: Data
 #### arrayBuffer(): `ArrayBuffer` 
 返回一个 JavaScript ```ArrayBuffer``` 对象。
 
+#### json(): `any | undefined`
+返回 JSON 解码结果，如果解码失败则返回 `undefined`。
+
 #### utf8String(): `string | undefined` 
 返回字符串，如果 Data 不是 UTF-8 编码，则返回 ```undefined```。
 

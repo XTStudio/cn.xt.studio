@@ -14,8 +14,10 @@ title: URLSession
 
 ### Instance Methods
 
-#### dataTask(req: `$0`, complete: `$1`): `URLSessionTask`
+#### fetch(request: `string | URL | URLRequest`): `Promise<Data>`
+返回一个 `Promise` 实例，并发起一个网络请求，请求成功后执行 `resolver`，失败则执行 `rejector`。
 
+#### dataTask(request: `$0`, complete: `$1`): `URLSessionTask`
 返回一个 Task 实例，请求参数如下。
 
 ##### $0 = string | URL | URLRequest
