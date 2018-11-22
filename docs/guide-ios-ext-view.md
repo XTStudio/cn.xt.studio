@@ -60,7 +60,7 @@ declare class MKMapView extends UIView {
 回到 TypeScript 工程，添加测试代码。
 
 ```typescript
-/// <reference path="../sample-ext.d.ts" />
+/// <reference path="../sample_ext.d.ts" />
 
 class MainViewController extends UIViewController {
 

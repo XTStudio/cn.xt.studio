@@ -36,10 +36,11 @@ XT 的核心是 [`engine`](https://github.com/XTStudio/engine-ios.git) 库，通
 | CGSize | UISize |
 | CGAffineTransform | UIAffineTransform |
 | UIEdgeInsets | UIEdgeInsets |
+| NSRange | UIRange |
 
 ## 导出示例
 
-在教学前，建议先下载[模板工程](https://github.com/XTStudio/sample-ext)。
+在教学前，建议先下载[模板工程](https://github.com/XTStudio/sample_ext)。
 
 ### FooManager
 
@@ -222,7 +223,7 @@ declare class FooManager {
 回到 `TypeScript` 工程，在 `main.ts` 文件中编写测试代码。
 
 ```typescript
-/// <reference path="../sample-ext.d.ts" />
+/// <reference path="../sample_ext.d.ts" />
 
 class MainViewController extends UIViewController {
 

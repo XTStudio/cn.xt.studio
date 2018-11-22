@@ -19,7 +19,9 @@
       "guide-await",
       "guide-userdefaults",
       "guide-ios-ext-regular",
-      "guide-ios-ext-view"
+      "guide-ios-ext-view",
+      "guide-android-ext-regular",
+      "guide-android-ext-view"
     ],
     "开发": [
       "guide-init",
